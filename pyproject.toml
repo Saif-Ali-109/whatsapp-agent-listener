@@ -1,0 +1,23 @@
+[project]
+name = "whatsapp-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Saif-Ali-109", email = "01-134242-109@student.bahria.edu.pk" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.143.3",
+    "groq>=1.7.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+whatsapp-agent = "whatsapp_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
