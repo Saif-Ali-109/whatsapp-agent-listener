@@ -11,3 +11,8 @@ wheels/
 
 #envs
 .env
+
+# Runtime state and secrets
+.env.*
+!.env.example
+agent_state.json
