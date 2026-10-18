@@ -316,7 +316,7 @@ For major changes, especially to the plugin API or storage design, please open a
 
 ## License
 
-No license has been selected for this repository yet. Until a license file is added, others do not have permission to use, modify, or redistribute the code. Add a `LICENSE` file (for example MIT or Apache-2.0) before presenting the project as open source.
+This project is licensed under the [MIT License](LICENSE).
 
 ## Disclaimer
 
