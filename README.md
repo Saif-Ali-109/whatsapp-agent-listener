@@ -23,7 +23,7 @@ WhatsApp Agent Listener receives messages sent to your WhatsApp agent, generates
 It is built as a clean, minimal foundation for developers who want to create their own WhatsApp AI agents, with a longer-term goal of supporting plugins and additional AI providers.
 
 > [!NOTE]
-> Despite the word *Webhook* in the repository name, the current version uses the platform's **long-polling `/updates` endpoint**. It does **not** run an HTTP webhook server and does **not** require a public URL or tunnel.
+> This project uses the platform's **long-polling `/updates` endpoint**. It does **not** run an incoming HTTP webhook server and does **not** require a public URL or tunnel.
 
 ## Features
 
@@ -100,8 +100,8 @@ uv --version
 ### 2. Clone the repository
 
 ```bash
-git clone https://github.com/Saif-Ali-109/Whatsapp-Agent-Webhook.git
-cd Whatsapp-Agent-Webhook
+git clone https://github.com/Saif-Ali-109/whatsapp-agent-listener.git
+cd whatsapp-agent-listener
 ```
 
 Run all remaining commands from the repository root (the directory containing `pyproject.toml`, `uv.lock`, and `agent.py`).
@@ -184,7 +184,7 @@ Groq model availability can change. If the default is unavailable to your accoun
 ## Project Structure
 
 ```text
-Whatsapp-Agent-Webhook/
+whatsapp-agent-listener/
 ├── agent.py                 # Polling loop, WhatsApp API calls, Groq responses
 ├── src/
 │   └── whatsapp_agent/
@@ -324,6 +324,6 @@ This is an independent community project. It is not affiliated with, endorsed by
 
 ## Links
 
-- [Repository](https://github.com/Saif-Ali-109/Whatsapp-Agent-Webhook)
+- [Repository](https://github.com/Saif-Ali-109/whatsapp-agent-listener)
 - [uv installation](https://docs.astral.sh/uv/getting-started/installation/) · [uv project guide](https://docs.astral.sh/uv/guides/projects/)
 - [Groq Console](https://console.groq.com/keys) · [Groq API docs](https://console.groq.com/docs)
